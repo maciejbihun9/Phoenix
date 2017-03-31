@@ -1,0 +1,39 @@
+<div>
+	<div data-dojo-type="dojo/store/JsonRest" data-dojo-id="treeViewStore"
+		id="treeViewStore" data-dojo-props="target:'rest/filesystem/tree'">
+		<script type="dojo/method" data-dojo-event="getChildren"
+			data-dojo-args="object">
+            console.log("Invoking getChildren");
+               return this.get(object.id).then(function(fullObject){
+                                    return fullObject.children;
+                                });
+        </script>
+	</div>
+
+	<div data-dojo-type="dijit/tree/ObjectStoreModel"
+		data-dojo-id="myModel" id="myModel"
+		data-dojo-props="store:treeViewStore">
+		<script type="dojo/method" data-dojo-event="getRoot"
+			data-dojo-args="onItem">
+               this.store.get("-1").then(onItem);    
+        </script>
+	</div>
+
+	<div data-dojo-attach-point="border"
+		data-dojo-type="dijit/layout/BorderContainer"
+		style="width: 800px; height: 500px" id="borderContainer">
+		<div data-dojo-type="dijit/layout/ContentPane"
+			data-dojo-props="region:'leading'" style="width: 300px;">
+
+			<div data-dojo-type="dijit/Tree" id="srcfileSystemTree"
+				data-dojo-props="model: myModel,openOnClick:false,showRoot:false">
+			</div>
+
+		</div>
+		<div data-dojo-type="dijit/layout/ContentPane"
+			data-dojo-props="region:'center'" style="width: 490px">
+				<div>ss</div>
+				center
+		</div>
+	</div>
+</div>

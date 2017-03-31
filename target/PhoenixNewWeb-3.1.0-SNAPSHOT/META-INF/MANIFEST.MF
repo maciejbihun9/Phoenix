@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: PhoenixNewWeb
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: se.volvo.it.tdm.phoenix
+Implementation-Build: wtp

@@ -1,0 +1,30 @@
+	#header { 
+			display:block; 
+			margin:0; 
+			padding:0; 
+			width:100%; 
+			height:40px; 
+			background: #8396AB; 
+	}
+	
+	#phoenix_logo {
+		display:inline-block;
+		margin-left:25px;
+		margin-top:10px;
+        height: 21px;
+        vertical-align: middle;
+	}
+	
+	#volvo_group_logo {
+		display:inline-block;
+		margin-right:25px;
+		margin-top:10px;
+		float:right;
+	}
+    
+    #phoenix_version {
+        display: inline-block;
+        margin-left: 25px;
+        margin-top: 50px;
+        vertical-align: middle;
+    }

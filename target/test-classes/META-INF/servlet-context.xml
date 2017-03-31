@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans 
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!-- Mocked Domain services for unit testing -->
+  <bean id="uploadToolService" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.uploadtool.application.UploadToolService" />
+  </bean>
+  
+  <bean id="uploadToolDocumentService" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.uploadtool.application.UploadToolDocumentService" />
+  </bean>
+  
+  <bean id="auditService" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.service.AuditLogService" />
+  </bean>  
+  
+  <bean id="docStructureService" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.service.DocumentStructureService" />
+  </bean> 
+  
+  <bean id="copyManagerService" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.service.CopyManagerService" />
+  </bean>
+  
+  <bean id="documentTypeRepository" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.repository.DocumentTypeRepository" />
+  </bean>
+  
+  <bean id="attributeDefinitionTranslator" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.translator.AttributeDefinitionTranslator" />
+  </bean>
+  
+  <bean id="dictionaryTranslator" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.translator.DictionaryTranslator" />
+  </bean>    
+  
+  <bean id="urlRequestQueryParamsService" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.volvo.phoenix.document.service.UrlRequestQueryParamsService" />
+  </bean>  
+
+</beans>

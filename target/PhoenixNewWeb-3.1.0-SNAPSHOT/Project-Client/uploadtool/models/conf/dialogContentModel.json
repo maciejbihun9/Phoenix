@@ -1,0 +1,69 @@
+[
+	 {
+		"dialogCategory" : "RequestError",
+		"idDefinitionProperty" : "error.response.text",		
+		"definitions" : {	 	
+			"default" : {
+				"dialogTitle" : "Error occured",
+				"closeAble" : "false",		
+				"dialogContent" : "Unexpected error has occured. Your http request end with status {0}. Please try once again and if issue stil occures contact with support. Error name : {1}",
+				"dialogProperties" : ["error.response.status" , "error.name"] 
+			},
+			
+			"IllegalStateException" : {	 
+				 "dialogCategory" : "IllegalStateException",
+				 "closeAble" : true,
+				 "dialogTitle" : "Uploading cannot proceed!",
+				 "dialogContent" : "There were problem with parsing metadata.xlsx file. Consider checking following issues: unsupported signs: @, no sheet called metadata, bad excel version(2017 not supported)"
+			},
+			"NO_TAB_CALLED_METADATA" : {	 
+				 "dialogCategory" : "Metadata problem",
+				 "closeAble" : false,
+				 "dialogTitle" : "Procesing Error",
+				 "dialogContent" : "There were problem with parsing metadata.xlsx file. No sheet called <B><i>metadata</i></B>. You can close the window."
+			},
+			"BAD_EXCEL_VERSION" : {	 
+				 "dialogCategory" : "Metadata problem",
+				 "closeAble" : false,
+				 "dialogTitle" : "File format error",
+				 "dialogContent" : "There were problem when parsing metadata.xlsx file. Make sure you are using supported MS Excel format (2010, 2013) and hyperlinks are not used in Excel content. </br>For more information please check in user guide <a href=\"\\static\\metadata.xlsx\" download=\"metadata.xlsx\">Example metadata.xlsx</a>. You can close the window."
+			}
+			
+		}
+	 },
+	 
+	 {		
+	 	"dialogCategory" : "ValidationError",
+	 	"closeAble" : true,
+		"dialogTitle" : "Uploading cannot proceed!",
+		"dialogContent" : "[Information]: The upload cannot proceed because<br/<br/> {0}",
+		"dialogProperties" : ["message"] 
+	 },
+	 
+	 {		
+	 	"dialogCategory" :"MissingMetadataWarn",
+	 	"closeAble" : true,
+		"dialogTitle" : "Metadata information",
+		"dialogContent" : "Document details information is not populated automatically.<br/>The following uploaded archives: <b>{0}</b> are missing document description file <b><i>metadata.xlsx</b></i>.<br/>To use this feature place your document description file <b><i>metadata.xlsx</b></i> in the root or in the outermost folder of your ZIP file. <a href=\"\\static\\metadata.xlsx\" download=\"metadata.xlsx\">Example metadata.xlsx</a>",
+		"dialogProperties" : ["message"] 
+	 },
+	
+	 {
+		 "dialogCategory" :"default",
+		 "closeAble" : true,
+		 "dialogTitle" : "Error occured",
+		 "dialogContent" : "Unexpected error has occured. Please try once again and if issue stil occures contact with support."
+	 },
+	 
+	 {
+		 "dialogCategory" :"MetadataReadMore",
+		 "closeAble" : true,
+		 "dialogTitle" : "Metadata information",
+		 "dialogContent" : "To automatically populate attributes of uploaded documents, a description file <b><i>metadata.xlsx</b></i> must be present in the root or in the outermost folder of your ZIP file."
+	 },
+	 
+	 {
+		
+	 }
+	 
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jboss-web>
+  <context-root>/copymanager</context-root>
+  <virtual-host>default</virtual-host>
+ 
+  <security-domain>SSO</security-domain>
+  <valve>
+      <class-name>org.apache.catalina.authenticator.SingleSignOn</class-name>
+  </valve>
+  <valve>
+    <class-name>${application.security.authenticator}</class-name>
+  </valve>
+  <jacc-star-role-allow>true</jacc-star-role-allow> 
+</jboss-web>

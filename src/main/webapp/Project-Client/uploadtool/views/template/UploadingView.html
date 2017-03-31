@@ -1,0 +1,29 @@
+<div style="height: 100%"> 
+<div data-dojo-type="dijit/layout/LayoutContainer" data-dojo-attach-point="cont" data-dojo-props="liveSplitters:true" style="height: 100%; width: 100%">
+    
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="lea" data-dojo-props="region:'top'">
+	    Upload documents to: <b><span data-dojo-attach-point="destinationFolderName"></span></b>
+    </div>
+    
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="mex" data-dojo-props="region:'top'">
+	    <span>Consider putting metadata for your documents <b><i>metadata.xlsx</b></i> in the root or in the outermost folder of your ZIP file: 
+		    <a href="\static\metadata.xlsx" download="metadata.xlsx">Excel template</a>
+		    <button data-dojo-attach-point="readMoreButton" style="margin-left: 16px" data-dojo-type="dijit/form/Button">Read more</button>
+	    </span><br/>
+	    <span>For more instructions please read 
+		    <a href="\static\UserManual.pdf" download="UserManual.pdf">User Manual</a>
+		 </span>    
+    </div>
+    
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="lead" data-dojo-props="region:'center'" >
+	    <div data-dojo-attach-point="uploader">
+    	</div>
+	</div>
+	
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="ce" data-dojo-props="region:'bottom'">
+        <button data-dojo-attach-point="previewButton" data-dojo-type="dijit/form/Button" style="float: right;">
+	    	Preview
+	    </button >
+    </div>
+</div>
+</div>

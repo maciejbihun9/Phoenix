@@ -1,0 +1,68 @@
+.iconDocument {
+    background-image: url("../img/document.png");
+    width: 16px;
+    height: 16px;
+}
+
+.notValid {
+    color: red;
+    font-weight: bold;
+}
+
+.newVersion:after {
+    font-size: 7px;
+    color: gray;
+    font-style: italic;
+    content: ' New Version';
+}
+
+#ajaxDialog {
+    width:700px;  
+    border-radius : 16px;
+}
+
+.tblsmall {
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+.formLable {
+    color: #000F60;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    text-align: left;
+}
+
+.forms {
+    color: #000000;
+    padding-right: 10px;
+    padding-bottom: 3px;
+}
+
+.tableTitle {
+    font-size: 8pt;
+    color: #001D91;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #BBBFDA; 
+}
+
+.myTreeClass {
+    height: 100%;
+}
+
+/*DOJO overriden styles*/
+h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-top: 1em;   /*overriden 1.5em;*/
+    margin-bottom: 0px;
+}
+
+.dijitSelectLabel, .dijitInputInner {
+    color: black !important;
+    background: white !important;
+}

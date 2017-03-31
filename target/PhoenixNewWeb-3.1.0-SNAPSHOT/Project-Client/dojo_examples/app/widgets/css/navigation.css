@@ -1,0 +1,10 @@
+.nav_container{
+	display: block;
+	margin: auto;
+	float: right;
+}
+.nav_button {
+	border: 1px;
+	border-style: solid;
+	width: 100px;	
+}

@@ -1,0 +1,10 @@
+com\volvo\phoenix\web\util\MetadataParserTest.class
+com\volvo\phoenix\web\util\HelperMethodsTest.class
+com\volvo\phoenix\web\util\FolderFileFilter.class
+com\volvo\phoenix\web\util\PropertiesUtilTest.class
+com\volvo\phoenix\web\util\FileUtilTest.class
+com\volvo\phoenix\web\util\UploadToolTestHelper.class
+com\volvo\phoenix\web\util\UploadToolProcessorTest.class
+com\volvo\phoenix\web\util\FileTypeTest.class
+com\volvo\phoenix\web\resource\UploadToolOperationResourceTest.class
+com\volvo\phoenix\web\controller\StartControllerTest.class

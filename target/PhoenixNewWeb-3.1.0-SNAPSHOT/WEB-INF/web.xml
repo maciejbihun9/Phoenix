@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="PhoenixNewWeb" version="3.0">
+  <display-name>PhoenixNewWeb</display-name>
+  
+  <filter>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>springapp</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>springapp</servlet-name>
+    <url-pattern>*.do</url-pattern>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Resources protected by SSO</web-resource-name>
+      <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    
+    <auth-constraint>
+      <role-name>*</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <security-role>
+    <role-name>*</role-name>
+  </security-role>
+
+  <login-config>
+    <auth-method>${application.security.auth-method}</auth-method>
+    <realm-name>SSO</realm-name>
+    <form-login-config>
+      <form-login-page>/logon.jsp</form-login-page>
+      <form-error-page>/logonfailed.jsp</form-error-page>
+    </form-login-config>
+  </login-config>   
+</web-app>

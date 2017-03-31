@@ -1,0 +1,22 @@
+.dgrid{
+	height: 80%;
+} 
+.field-progressBar{
+    width: 250px;
+    text-align: center;
+}
+
+.field-button {
+    width: 75px;    
+    text-align: center;
+}
+ 
+.field-name {
+    width: 100%;
+    text-align: left;
+    
+}
+
+.dgrid-cell{
+	vertical-align: center;
+}

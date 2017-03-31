@@ -1,0 +1,19 @@
+<div style="height: 100%"> 
+<div data-dojo-type="dijit/layout/LayoutContainer" data-dojo-attach-point="cont" data-dojo-props="liveSplitters:true" id="layoutPriorityBorderContainer" style="height: 100%; width: 100%">
+    
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="lea" data-dojo-props="region:'top'">
+	    Upload documents to: <span data-dojo-attach-point="destinationFolderName"></span>
+    </div>
+    
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="lead" data-dojo-props="region:'center'" >
+	    <div data-dojo-attach-point="uploader">
+    	</div>
+	</div>
+	
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="ce" data-dojo-props="region:'bottom'">
+        <button data-dojo-attach-point="previewButton" data-dojo-type="dijit/form/Button" style="float: right;">
+	    	Preview
+	    </button >
+    </div>
+</div>
+</div>

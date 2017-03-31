@@ -1,0 +1,12 @@
+	@import "/copymanager/Project-Client/dojo-1.10.4/dojo/resources/dojo.css";
+	@import "/copymanager/Project-Client/dojo-1.10.4/dijit/themes/claro/claro.css";	
+ 	
+ 	@import "/copymanager/Project-Client/dgrid-1.1.0/css/dgrid.css";
+	@import "/copymanager/Project-Client/dgrid-1.1.0/css/skins/claro.css";
+	
+    
+    @import "/copymanager/Project-Client/uploadtool/widgets/css/Header.css";
+    @import "/copymanager/Project-Client/uploadtool/views/css/UploadingView.css";
+    @import "/copymanager/Project-Client/uploadtool/views/css/PreviewView.css";
+    @import "/copymanager/Project-Client/uploadtool/views/css/LoadingView.css";
+    @import "/copymanager/Project-Client/uploadtool/widgets/css/AttachementTableWidget.css";

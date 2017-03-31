@@ -1,0 +1,31 @@
+{
+	"RequestError" : {		
+		"dialogTitle" : "Error occured",
+		"dialogContent" : "Unexpected error has occured. Your http request end with status {0}. Please try once again and if issue stil occures contact with support. Error name : {1}",
+		"errorProperties" : ["error.response.status" , "error.name"] 
+	 },
+	 
+	 "ValidationError" :{		
+		"dialogTitle" : "Uploading cannot proceed!",
+		"dialogContent" : "[Information]: The upload cannot proceed because<br/<br/> {0}",
+		"errorProperties" : ["error.message"] 
+	 },
+	 
+	 "MissingMetadataWarn": {		
+		"dialogTitle" : "Metadata information",
+		"dialogContent" : "[Information]: Document details information is not populated automatically. The following uploaded archives: {0} are missing document description file \"metadata.xlsx\" in the root of zip file. To use this feature place your document description file metadata.xlsx in the root of your zip file. <a href=\"\\static\\metadata.xlsx\" download=\"metadata.xlsx\">Example metadata.xlsx</a>",
+		"errorProperties" : ["error.message"] 
+	 },
+	
+	"default": {
+		 "dialogTitle" : "Error occured",
+		 "dialogContent" : "Unexpected error has occured. Please try once again and if issue stil occures contact with support."
+	 },
+	 
+	 "IllegalStateException": {
+		 "dialogTitle" : "It was problem with metadata resources",
+		 "dialogContent" : "Propably hiperlinks does not point to any endpoint"
+	 }
+	 
+	 
+}

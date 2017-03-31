@@ -1,0 +1,32 @@
+<div style="height: 300px">
+	<form method="post" action="#" id="myForm"
+		enctype="multipart/form-data">
+		<fieldset>
+			<input multiple="true" type="file" name="file" id="uploader"
+				data-dojo-type="dojox/form/Uploader"
+				data-dojo-attach-point="uploader"
+				data-dojo-props="label: 'Upload', uploadOnSelect: true">
+		</fieldset>
+	</form>
+
+	<table class="dojoxUploaderFileListTable">
+		<thead>
+			<tr class="dojoxUploaderFileListHeader">
+				<th class="dojoxUploaderFileName">Name</th>
+				<th class="dojoxUploaderFileSize">Progress</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody class="dojoxUploaderFileListContent"
+			data-dojo-attach-point="listNode"></tbody>
+	</table>
+
+	<div data-dojo-attach-point="hiddenContainer" style="display: none;">
+		<div data-dojo-type="dijit/ProgressBar" 
+			data-dojo-attach-point="progressBar" data-dojo-id="myProgressBar"
+			id="downloadProgress" ></div>
+
+	</div>
+
+
+</div>

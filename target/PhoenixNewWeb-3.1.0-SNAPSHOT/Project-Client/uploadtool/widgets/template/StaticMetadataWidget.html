@@ -1,0 +1,113 @@
+<div>
+    <div data-dojo-attach-point="staticMetadataCont" data-dojo-props="liveSplitters:true">
+        <H4 class="tableTitle">Document info</H4>
+        <TABLE BORDER=0 CELLPADDING=2 CELLSPACING=3 class="tblsmall">
+            <TR>
+                <TD CLASS="formLable">Alternative number</TD>
+                <TD CLASS="forms">
+                    <INPUT disabled TYPE="text" NAME="alt_doc_id" VALUE="${doc.altDocId}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </TD>
+
+                <TD CLASS="formLable">&nbsp;</TD>
+                <TD>&nbsp;</TD>
+            </TR>
+            <TR>
+                <TD CLASS="formLable">Version date*</TD>
+                <TD CLASS="forms">
+                    <INPUT disabled TYPE="text" NAME="issue_date" VALUE="${doc.issueDate}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </TD>
+
+                <TD CLASS="formLable">Info class*</TD>
+                <TD CLASS="forms">
+                    <select data-dojo-type="dijit/form/Select" disabled>
+			<OPTION VALUE="${doc.infoClass}">${doc.infoClass}</OPTION>
+                    </select>
+                </TD>
+            </TR>
+
+            <TR>
+                <TD CLASS="formLable">Version</TD>
+                <td CLASS="forms">
+                    <INPUT disabled NAME="revision" value="${doc.revision}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </td>
+                <TD CLASS="formLable">Status</TD>
+                <TD CLASS="forms">
+                    <B>${doc.status}</B>
+                </TD>
+            </TR>
+
+            <TR>
+                <TD CLASS="formLable">Protect In-Work</TD>
+                <TD CLASS="forms">
+                    <input disabled data-dojo-type="dijit/form/CheckBox" NAME="protectInWork" type="checkbox" VALUE=""
+                           ${doc.protectInWork}
+                           title="Select it to protect In-Work versions of this document against access of other users than issuer or document approvers"/>
+                </TD>
+
+                <TD CLASS="formLable">Document Family*</TD>
+                <TD CLASS="forms">
+                    <select data-dojo-type="dijit/form/Select" disabled>
+			<OPTION VALUE="${doc.family}">${doc.family}</OPTION>
+                    </select>
+                </TD>
+            </TR>
+
+            <TR>
+                <TD CLASS="formLable">Title*</TD>
+                <TD CLASS="forms">
+                    <INPUT disabled TYPE="text" NAME="title" VALUE="${doc.documentTitle}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </TD>
+
+                <TD CLASS="formLable">Document Type*</TD>
+                <TD CLASS="forms">
+                    <select data-dojo-type="dijit/form/Select" disabled>
+			<OPTION VALUE="${doc.type}">${doc.type}</OPTION>
+                    </select>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS="formLable">Issuer</TD>
+                <TD CLASS="forms">
+                    <INPUT disabled TYPE="text" maxlength="130" NAME="description" VALUE="${doc.issuer}, ${doc.issuerId}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </TD>
+
+                <TD CLASS="formLable">Author name</TD>
+                <TD CLASS="forms">
+                    <INPUT disabled TYPE="text" size=30 NAME="dummy" VALUE="${doc.author}, ${doc.authorId}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </TD>            </TR>
+            <TR>
+                <TD CLASS="formLable">Description</TD>
+                <TD CLASS="forms">
+                    <INPUT disabled TYPE="text" maxlength="130" NAME="description" VALUE="${doc.description}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </TD>
+
+                <TD></TD>
+                <TD></TD>
+            </TR>
+            <TR>
+                <TD CLASS="formLable">Notes</TD>
+                <TD CLASS="forms">
+                    <INPUT disabled TYPE="text" maxlength="1000" NAME="notes" VALUE="${doc.notes}"
+                           data-dojo-type="dijit/form/TextBox"/>
+                </TD>
+
+                <td></td>
+                <td></td>
+
+                <td></td>
+                <td></td>
+            </TR>
+
+            <TR>
+                <TD NOWRAP>&nbsp;</TD>
+            </TR>
+        </table>
+    </div>
+</div>

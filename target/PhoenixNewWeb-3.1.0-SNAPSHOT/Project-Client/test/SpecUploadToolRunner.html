@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jasmine Spec Runner v2.5.2 for UploadTool</title>
+
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.5.2/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-2.5.2/jasmine.css">
+
+        <script src="lib/jasmine-2.5.2/jasmine.js"></script>
+        <script src="lib/jasmine-2.5.2/jasmine-html.js"></script>
+        <script src="lib/jasmine-2.5.2/boot.js"></script>
+
+        <script>
+            var dojoConfig = {
+                async: true,
+                packages: [
+                    {
+                        name: "app",
+                        location: "../../uploadtool"
+                    },
+                    {
+                        name: 'spec',
+                        location: '../../test/uploadtool/spec'
+                    },
+                    {
+                        name: 'dgrid',
+                        location: '../../dgrid-1.1.0'
+                    },
+                    {
+                        name: 'dstore',
+                        location: '../../dstore-1.1.1'
+                    }
+                ]
+            };
+        </script>
+        <script src="../dojo-1.10.4/dojo/dojo.js"></script>
+
+        <script>
+            require([
+                "dojo/ready",
+                "spec/errorModelTest"
+            ], function (ready) {
+                ready(function () {
+                    jasmine.getEnv().addReporter(new jasmine.HtmlReporter());
+                    jasmine.getEnv().execute();
+                });
+            });
+        </script>
+    </head>
+    <!--must be blank-->
+    <body>
+    </body>
+</html>

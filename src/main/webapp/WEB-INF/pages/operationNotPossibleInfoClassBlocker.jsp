@@ -1,0 +1,2 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<p>NG: This position cannot be moved. It contains document with Info Class (${cf.missingInfoClass}) which doesn't exist in target root folder</p>
